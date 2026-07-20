@@ -321,7 +321,8 @@
       </div>
 
       <div class="screenshot-tabs">
-        <button class="tab-btn active" onclick="showTab(event,'app')">Login page</button>
+        <button class="tab-btn active" onclick="showTab(event,'arch')">Architecture</button>
+        <button class="tab-btn" onclick="showTab(event,'app')">Login page</button>
         <button class="tab-btn" onclick="showTab(event,'dashboard')">Dashboard</button>
         <button class="tab-btn" onclick="showTab(event,'tasks')">Task board</button>
         <button class="tab-btn" onclick="showTab(event,'eks')">EKS cluster</button>
@@ -330,7 +331,11 @@
         <button class="tab-btn" onclick="showTab(event,'ec2')">Worker nodes</button>
       </div>
 
-      <div id="pane-app" class="screenshot-pane active">
+      <div id="pane-arch" class="screenshot-pane active">
+        <img src="assets/taskflow/architecture.png" alt="TaskFlow architecture diagram"/>
+        <p class="screenshot-caption">// Production architecture — 4 GitHub repos · AWS EKS · ArgoCD GitOps · Route53 · ACM · ECR</p>
+      </div>
+      <div id="pane-app" class="screenshot-pane">
         <img src="assets/taskflow/login.png" alt="TaskFlow login page"/>
         <p class="screenshot-caption">// Login page — deployed at netforgetech.online with ACM SSL certificate</p>
       </div>
